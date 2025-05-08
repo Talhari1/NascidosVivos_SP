@@ -1,0 +1,53 @@
+# Análise de Nascimentos no Estado de São Paulo (2020–2022)
+
+## 🧩 Problema / Objetivo
+
+O objetivo deste projeto é realizar uma análise detalhada dos nascimentos ocorridos no estado de São Paulo entre os anos de 2020 e 2022, com base nos dados oficiais disponibilizados pelo DataSUS.
+A proposta é identificar padrões, tendências e insights relevantes sobre os nascimentos no período analisado, utilizando ferramentas de análise de dados e visualização interativa via Power BI.
+
+## 🛠️ Ferramentas Utilizadas
+
+- **Python**: Tratamento e limpeza dos dados brutos (.dbc), conversão e preparação dos arquivos para análise.
+- **SQL Server**: Armazenamento dos dados estruturados e organização relacional.
+- **Power BI**: Conexão com o banco de dados, modelagem e visualização interativa dos dados.
+
+## ⚙️ Principais Etapas Realizadas
+
+1. **Coleta dos Dados**:
+   - Extração dos arquivos do Sistema de Informações sobre Nascidos Vivos (SINASC) do portal DataSUS.
+
+2. **Pré-processamento**:
+   - Conversão dos arquivos `.dbc` para `.csv` com Python.
+   - Remoção de colunas irrelevantes para a análise.
+   - Padronização de nomes de colunas e tipos de dados.
+
+3. **Importação para SQL Server**:
+   - Criação de banco de dados chamado `NascidosVivos`.
+   - Importação dos dados limpos diretamente para o SQL Server usando scripts Python.
+
+4. **Modelagem e Conexão com Power BI**:
+   - Conexão direta do Power BI com o banco de dados SQL Server.
+   - Criação de colunas adicionais para enriquecer a análise e facilitar a segmentação dos dados.
+   - Criação de painéis interativos com indicadores, faixa etária da mãe, tipo de parto, entre outros.
+
+## 📊 Resultados Obtidos
+
+Através do dashboard interativo criado no Power BI, foi possível:
+
+- Visualizar a distribuição de nascimentos do estado de SP.
+- Analisar as tendências de tipo de parto (normal e cesariana) ao longo do período.
+- Observar o perfil das mães com base em idade, escolaridade e estado civil.
+- Comparar os dados de 2020, 2021 e 2022 em diferentes dimensões.
+- Gerar uma ferramenta de consulta dinâmica que pode auxiliar gestores públicos, profissionais da saúde e pesquisadores.
+
+🔗 [Acesse o Dashboard no Power BI] (https://app.powerbi.com/view?r=eyJrIjoiM2YyNmQ1NDAtMDA2MC00MzlmLTlkYjgtODI0ZTMxNGNkNjNhIiwidCI6ImYzNDc5OTY4LTU3YTUtNDUyNS05MDUyLTlmODI5MGJmY2MxMyJ9)
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, foi possível:
+
+- Aprofundar o conhecimento em manipulação de dados públicos do DataSUS.
+- Aprimorar técnicas de limpeza, tratamento e importação de grandes volumes de dados com Python.
+- Entender melhor a estrutura e o modelo relacional de dados no SQL Server.
+- Fortalecer habilidades de modelagem de dados e visualização com Power BI.
+- Criar uma solução completa de ETL e análise de dados de ponta a ponta.
